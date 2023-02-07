@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"	 xmlns:context="http://www.springframework.org/schema/context"
+xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+	 <context:annotation-config/>
+	
+	
+	<bean name="emp1"  class="com.springcore.collection.Emp">
+	
+	<property  name="name"   value="RadheKrishna" />
+	
+	<property name="phones">
+	
+	<list>
+	<value>8390</value>
+	<value>7214</value>
+	<value>5566</value>
+	<value>83988</value>
+	<null/>  <!-- in this way we can print Null also -->
+	</list>
+	
+	
+	</property>
+	
+	<property name="addresses">
+	<set>
+	<value>wardha</value>
+	<value>amt</value>
+	<value>parbhani</value>
+	<value>mumbai</value>
+
+	</set>
+	
+	</property>
+	
+	<property  name="courses">
+	<map>
+	<entry  key="java"  value="2months" />
+	<entry  key="EDI"  value="3months" />
+	<entry  key="c++"  value="4months" />
+	
+	</map>
+	
+	</property>
+	
+	</bean>
+	 
+	 </beans>
